@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Open for Commission</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <meta name="viewport" content="width=device, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    </head>
+
+    <body>
+
+    <!--HOMEPAGE-->
+    
+        <section id="banner">
+           <img src="IMAGES/logo.png" class="logo"> 
+           <div class="banner-text">
+                <h1>Art Commission</h1>
+                <p>Open for Comission</p>
+                <div class="banner-btn">
+                    <a href="#"><span></span>Find Out</a>
+                    <a href="#"><span></span>Read More</a>
+                </div>
+           </div>
+        </section>
+
+    <!--SIDE NAV-->
+
+        <div id="sideNav">
+            <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#artstyle">ARTSTYLE</a></li>
+                <li><a href="#work">WORKS</a></li>
+                <li><a href="#aboutMe">ABOUT ME</a></li>
+                <li><a href="#footer">CONTACTS</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="IMAGES/menuBtn.png" id="menu">
+        </div>
+
+    <!--Artstyle-->
+
+        <section id="artstyle">
+            <div class="title-text">
+                <h1>ARTSTYLE</h1>
+                <p>Which do you prefer</p>
+            </div>
+            <div class="artstyle-box">   
+                <a href="#work" class="artstyle1"><span></span><h1>DIGITAL</h1></a>     
+                <a href="#work2" class="artstyle2"><span></span><h1>TRADITIONAL</h1></a>
+            </div>
+        </section>
+
+    <!--Work-->
+
+        <section id="work">
+            <div class="title-text">
+            <h1>DIGITAL WORKS</h1>
+            <p>Samples</p>
+            </div>
+            <div class="art-works">
+                <div class="single-art">
+                    <img src="IMAGES/art1.png">
+                </div>
+                <div class="single-art">
+                    <img src="IMAGES/art2.png">
+                </div>
+                <div class="single-art">
+                    <img src="IMAGES/art3.png">
+                </div>
+                <div class="single-art">
+                    <img src="IMAGES/art4.png">
+                </div>
+                <div class="single-art">
+                    <img src="IMAGES/art5.png">
+                </div>
+                <div class="single-art">
+                    <img src="IMAGES/art6.png">
+                </div>
+            </div>
+
+        </section>
+
+    <!--Work2-->
+
+        <section id="work2">
+            <div class="title-text">
+                <h1>Traditional Works</h1>
+                <p>Samples</p>
+            </div>
+            <div class="art-works">
+                <div class="single-art">
+                    <img src="IMAGES/trad1.jpg">
+                </div>
+                <div class="single-art">
+                    <img src="IMAGES/trad2.jpg">
+                </div>
+                <div class="single-art">
+                    <img src="IMAGES/trad3.png">
+                </div>
+                <div class="single-art">
+                    <img src="IMAGES/trad4.jpg">
+                </div>
+                <div class="single-art">
+                    <img src="IMAGES/trad5.jpg">
+                </div>
+                <div class="single-art">
+                    <img src="IMAGES/trad6.jpg">
+                </div>
+            </div>
+            
+        </section>
+
+    <!--About Me-->
+
+         <section id="aboutMe">
+            <div class="title-text">
+                <h1>ABOUT ME</h1>
+                <p>What to know?</p>
+            </div>
+                <div class="aboutMe-info">
+                    <div class="user">
+                        <img src="IMAGES/user.jpg">
+                        <div class="user-info">
+                            <h4>DAVID JAMES<i class="fa-brands fa-instagram"></i></h4>
+                            <small>@d._.djims</small>
+                        </div>
+                    </div>
+                <p>
+                    I'm Longaquit, David James 21 year/old. Currently I'm a College Student, 
+                    Studying at Collegio de Montalban and now I'm Starting to do Art Commission
+                    in the right amount of price. I do Traditional but now mainly Digital since 
+                    coloring is much more efficient and easy to apply. I hope you trust my skills.
+                </p>
+            </div>
+        
+    <!--Footer-->
+
+        <section id="footer">
+            <div class="title-text">
+                <h1>CONTACT</h1>
+                <p>What to know?</p>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>When am I Available</h1>
+                    <p><i class="fa-solid fa-clock"></i>TBA</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Get In Touch</h1>
+                    <p>B6 P4 L222 Centella Homes, Brgy. San Isidro, Rodriguez Rizal<i class="fa-solid fa-location-dot"></i></p>
+                    <p>davidjameslongaquit.sp@gmail.com<i class="fa-solid fa-envelope"></i></p>
+                    <p>+639519161967<i class="fa-solid fa-phone"></i></p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <p>Activity for Website</p>
+            </div>
+        
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                    menu.src = "images/closeBtn.png";
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                    menu.src = "images/menuBtn.png";
+                }
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+	        speed: 800,
+	        speedAsDuration: true
+            });
+
+        </script>
+    </body>
+</html>
